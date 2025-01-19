@@ -6,146 +6,151 @@
     <title>Blog Entries</title>
     <style>
         /* General Styles */
-body {
-    font-family: 'Alegreya Sans', literata; /* Alegreya Sans for regular text */
-    margin: 0;
-    padding: 0;
-    background-color: #3D7A93; /* Blue background color */
-    color: #EBFCFF; /* Light text color */
-}
+<style>
+    body {
+        font-family: 'Alegreya Sans', literata;
+        margin: 0;
+        padding: 0;
+        background-color: #3D7A93;
+        color: #EBFCFF;
+    }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
 
-/* Header Section */
-header {
-    background-color: #3D7A93; /* Background color remains the same */
-    color: #EBFCFF; /* Light text color */
-    padding: 20px 0;
-    text-align: center;
-}
+    header {
+        background-color: #3D7A93;
+        color: #EBFCFF;
+        padding: 20px 0;
+        text-align: center;
+    }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    font-family: 'literata', literata; /* Alegreya Sans font for headings */
-}
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        font-family: 'literata', literata;
+    }
 
-header p {
-    font-size: 1.2em;
-    margin: 10px 0 0;
-    font-family: 'Alegreya Sans', literata; /* Alegreya Sans for regular text */
-}
+    header p {
+        font-size: 1.2em;
+        margin: 10px 0 0;
+        font-family: 'Alegreya Sans', literata;
+    }
 
-/* Navigation Styles */
-nav {
-    background-color: #2C5B73; /* Darker blue for contrast */
-    position: sticky; /* Fixes the nav bar at the top */
-    top: 0; /* Stick to the top of the page */
-    z-index: 1000; /* Ensures the nav stays above other content */
-    width: 100%; /* Ensures the nav bar spans the full width */
-}
+    nav {
+        background-color: #2C5B73;
+    }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
 
-nav ul li {
-    margin: 0 15px;
-}
+    nav ul li {
+        margin: 0 15px;
+    }
 
-nav ul li a {
-    color: #EBFCFF; /* Light text color for links */
-    text-decoration: none;
-    font-size: 1.2em;
-    font-family: 'Alegreya Sans', literata;
-}
+    nav ul li a {
+        color: #EBFCFF;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-family: 'Alegreya Sans', literata;
+    }
 
-nav ul li a:hover {
-    text-decoration: underline;
-    color: #F1F1F1; /* Lighter hover color */
-}
+    nav ul li a:hover {
+        text-decoration: underline;
+        color: #F1F1F1;
+    }
 
-/* Header Image Styles */
-.header-image {
-    margin: 20px 0;
-}
+    #about {
+        text-align: center;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: white;
+        color: #3D7A93;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-.centered-image {
-    width: 80%; /* You can adjust this to your preference */
-    max-width: 600px;
-    display: block;
-    margin: 0 auto;
-}
+    .about-content p {
+        font-size: 1.2em;
+        font-family: 'Alegreya Sans', literata;
+    }
 
-/* About Section */
-#about {
-    text-align: center;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: white;
-    color: #3D7A93; /* Text color */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    main {
+        padding: 30px 0;
+    }
 
-.about-content p {
-    font-size: 1.2em;
-    font-family: 'Alegreya Sans', literata;
-}
+    /* Blog Posts Section */
+    .blog-posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* Three columns for blog posts */
+        gap: 30px;
+        margin-top: 30px;
+    }
 
-/* Main Content Section */
-main {
-    padding: 30px 0;
-}
+    /* Each Blog Post */
+    .blog-posts article {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
 
-/* Blog Post Styles */
-.blog-posts article {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    .blog-posts article:hover {
+        transform: scale(1.05); /* Slight hover effect for posts */
+    }
 
-.blog-posts article h2 {
-    font-size: 1.8em;
-    color: #3D7A93; /* Blue color for post titles */
-    font-family: 'Alegreya Sans', literata; /* Alegreya Sans font for post titles */
-}
+    .blog-posts article h2 {
+        font-size: 1.8em;
+        color: #3D7A93;
+        font-family: 'Alegreya Sans', literata;
+    }
 
-.blog-posts article p {
-    font-size: 1.2em;
-    color: #666;
-}
+    .blog-posts article p {
+        font-size: 1.2em;
+        color: #666;
+    }
 
-.blog-posts article a {
-    text-decoration: none;
-    color: #3D7A93; /* Blue color for links */
-    font-weight: bold;
-    font-family: 'Alegreya Sans',literata;
-}
+    .blog-posts article a {
+        text-decoration: none;
+        color: #3D7A93;
+        font-weight: bold;
+        font-family: 'Alegreya Sans', literata;
+    }
 
-.blog-posts article a:hover {
-    text-decoration: underline;
-}
+    .blog-posts article a:hover {
+        text-decoration: underline;
+    }
 
-/* Footer Section */
-footer {
-    background-color: #3D7A93; /* Blue footer */
-    color: #EBFCFF; /* Light text color */
-    padding: 10px 0;
-    text-align: center;
-}
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .blog-posts {
+            grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+        }
+    }
 
-    }    </style>
+    @media (max-width: 480px) {
+        .blog-posts {
+            grid-template-columns: 1fr; /* Single column on very small screens */
+        }
+    }
+
+    footer {
+        background-color: #3D7A93;
+        color: #EBFCFF;
+        padding: 10px 0;
+        text-align: center;
+    }
+</style>
+
 </head>
 <body>
     <div class="container">
