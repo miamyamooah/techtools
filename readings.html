@@ -79,11 +79,29 @@
             color: #3D7A93;
             cursor: pointer;
             font-family: 'Alegreya Sans', literata;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .folder h2:after {
+            content: "▼";
+            font-size: 1.2em;
+            margin-left: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .folder.open h2:after {
+            transform: rotate(180deg);
         }
 
         .folder .resources {
             display: none;
             margin-top: 10px;
+        }
+
+        .folder.open .resources {
+            display: block;
         }
 
         .folder .resources div {
@@ -101,6 +119,17 @@
             color: #EBFCFF;
             padding: 10px 0;
             text-align: center;
+        }
+
+        /* Improved Text Readability */
+        body {
+            color: #FFFFFF; /* Darker text color for better contrast */
+        }
+        nav ul li a {
+            color: #FFFFFF; /* White color for better visibility */
+        }
+        footer {
+            color: #FFFFFF;
         }
     </style>
 </head>
@@ -126,47 +155,21 @@
                 <div>
                     <h3>Resource 1: Horizon Report for Teaching and Learning</h3>
                     <p>A comprehensive analysis of emerging trends, challenges, and technologies shaping the future of teaching and learning in higher education.</p>
-                    <a href="https://learn-us-east-1-prod-fleet02-xythos.content.blackboardcdn.com/5df1cdd432f98/21140417?X-Blackboard-S3-Bucket=learn-us-east-1-prod-fleet01-xythos&X-Blackboard-Expiration=1737331200000&X-Blackboard-Signature=YBlJS9F3EdTjXN6Hl895G%2BRJSETTTrIiwi2M1vKDg%2Bs%3D&X-Blackboard-Client-Id=100359&X-Blackboard-S3-Region=us-east-1&response-cache-control=private%2C%20max-age%3D21600&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27Horizon%2520Report%2520for%2520Teaching%2520%2526%2520Learning%25202024.pdf&response-content-type=application%2Fpdf&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIEGvetoQL4kApWSybjXYsMgdMBQsGnC08bB0R6Fs3Z1%2BAiATM6iKjHimlzUD%2F6JR4me9FHBJYC6ELXenDmyah1FbXyq%2BBQiU%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAQaDDYzNTU2NzkyNDE4MyIMP4RMNjIUYsPpMMBRKpIF9%2BXG4Ftxer4D%2BqVpJw9YWCuLESCj4ydD9WHtok2dEjPqRNs1tYDyBAmNXBk%2Bd9bKNINUIv3yrWalHBlD87d0veDuQ2s2gUTeVlAyRektvfVrgE33lQMTWFajGDeaUryu8tp1dmqtu3PPnzfnxd%2FDbd%2B3Q92DcO1tIlhweZVVz9x3OUILweL5V7pJPoROa4tzkk4okSkBdG%2Bh9SDj0qzxOOB5QjugTLitxp7Gl326iKj3zr8NnehCjDvb19HD9IYk%2FqAZPGUm%2FcEhsWt1j3MZr2K2ggtkRZeIAFnfuKE5A16CPdbBediGYuF74OsG%2BsxId9dV8jXZ0A6AVcz%2BOQE3g1jz2KzCa5xMF40qtKyRnP4ICN6NZq2DOT1sDg79Jixbjl4%2Bot%2F%2FY1Ux%2BsDizqgb%2FKwzL39bQ15glP0bZSoNUZBczEKvuOcFSUV9Pof2R3N8IXKVNPrEJ454Tiv1OllPM4neLbqNYnEpFfTcoDhpRXA3VnBBcF%2BtOk6AbgujVvTmgcjuiIUFlGHTbl93XBUzyjTKa%2BqiLlLVaGBdXoHUyRxthPvIxXwItFRQSO2d7V9eMr2pawu5h11vF01%2FcvZAkZP38G92g7tk8vvw6DkDnDSIeiVoXKu4PfakV%2FgH1lda0K2x%2FGyH5P204BVOTDH%2FZeYup7qA7rIXwmD7J%2BnaWhI3hTi4NeAta4h1N5V6ao4AeS8eIRA8blyKoAJlRUgJYBweFTrnxUSH%2F2OmpOvffS67%2F8TokcAVLTfFtRLzA%2BUFPQ59bzBWOsZ9pDa07FkAXlDXhbxYQULXxCQKqLF7R%2FQp15CFAhk1lKfJ2oEQ9748KfpUFdz4W1VEMXCdchaCNydtUCV72IXlcpfXs7gIGYFMzzDim7W8BjqyARLEDxORPwE1xb88JNiCUNwC6zJp8%2FTV4nQm3lkxm4RP%2FNGasJKsB8VmOEF7CWSu2KDORnvh%2BG1roeuEDhhxY6ZOAbj33dTOtr%2BSD6k%2FsgyMjqzE9qhjsoRCQeglKliJmhhW3EtBI4GyB8lp%2F2hv6WZnT3MYQh8lG71FYgHf1VrNeWrZeYRAH8njWjZ8tQmIeuVtQ07fjzGVfkOqE%2FV%2FvnTKqJ4IN8QvD2nFBATjJuy3gU0%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250119T180000Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=ASIAZH6WM4PLZZCF2SVP%2F20250119%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=7cc97f5e6931504b872262a84ec6561c5927f3012ba1ca4f6f8e4f09fcc52b91" target="_blank">Read more</a>
-                </div>
-                <div>
-                    <h3>Resource 2: Future of EdTech</h3>
-                    <p>Explores emerging technologies that could shape the future of education...</p>
-                    <a href="https://www.example.com" target="_blank">Read more</a>
-                </div>
-                <div>
-                    <h3>Resource 3: Tech Integration in Classrooms</h3>
-                    <p>How schools are integrating new technologies into their curricula...</p>
-                    <a href="https://www.example.com" target="_blank">Read more</a>
+                    <a href="https://learn-us-east-1-prod-fleet02-xythos.content.blackboardcdn.com/5df1cdd432f98/21140417?X-Blackboard-S3-Bucket=learn-us-east-1-prod-fleet01-xythos&X-Blackboard-Expiration=1737331200000&X-Blackboard-Signature=YBlJS9F3EdTjXN6Hl895G%2BRJSETTTrIiwi2M1vKDg%2Bs%3D&X-Blackboard-Client-Id=100359&X-Blackboard-S3-Region=us-east-1&response-cache-control=private%2C%20max-age%3D21600&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27Horizon%2520Report%2520for%2520Teaching%2520%2526%2520Learning%25202024.pdf&response-content-type=application%2Fpdf&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIEGvetoQL4kApWSybjXYsMgdMBQsGnC08bB0R6Fs3Z1%2BAiATM6iKjHimlzUD%2F6JR4me9FHBJYC6ELXenDmyah1FbXyq%2BBQiU%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAQaDDYzNTU2NzkyNDE4MyIMP4RMNjIUYsPpMMBRKpIF9%2BXG4Ftxer4D%2BqVpJw9YWCuLESCj4ydD9WHtok2dEjPqRNs1tYDyBAmNXBk%2Bd9bKNINUIv3yrWalHBlD87d0veDuQ2s2gUTeVlAyRektvfVrgE33lQMTWFajGDeaUryu8tp1dmqtu3PPnzfnxd%2FDbd%2B3Q92DcO1tIlhweZVVz9x3OUILweL5V7pJPoROa4tzkk4okSkBdG%2Bh9SDj0qzxOOB5QjugTLitxp7Gl326iKj3zr8NnehCjDvb19HD9IYk%2FqAZPGUm%2FcEhsWt1j3MZr2K2ggtkRZeIAFnfuKE5A16CPdbBediGYuF74OsG%2BsxId9dV8jXZ0A6AVcz%2BOQE3g1jz2KzCa5xMF40qtKyRnP4ICN6NZq2DOT1sDg79Jixbjl4%2Bot%2F%2FY1Ux%2BsDizqgb%2FKwzL39bQ15glP0bZSoNUZBczEKvuOcFSUV9Pof2R3N8IXKVNPrEJ454Tiv1OllPM4neLbqNYnEpFfTcoDhpRXA3VnBBcF%2BtOk6AbgujVvTmgcjuiIUFlGHTbl93XBUzyjTKa%2BqiLlLVaGBdXoHUyRxthPvIxXwItFRQSO2d7V9eMr2pawu5h11vF01%2FcvZAkZP38G92g7tk8vvw6DkDnDSIeiVoXKu4PfakV%2FgH1lda0K2x%2FGyH5P204BVOTDH%2FZeYup7qA7rIXwmD7J%2BnaWhI3hTi4NeAta4h1N5V6ao4AeS8eIRA8blyKoAJlRUgJYBweFTrnxUSH%2F2OmpOvffS67%2F8TokcAVLTfFtRLzA%2BUFPQ59bzBWOsZ9pDa07FkAXlDXhbxYQULXxCQKqLF7R%2FQp15CFAhk1lKfJ2oEQ9748KfpUFdz4W1VEMXCdchaCNydtUCV72IXlcpfXs7gIGYFMzzDim7W8BjqyARLEDxORPwE1xb88JNiCUNwC6zJp8%2FTV4nQm3lkxm4RP%2FNGasJKsB8VmOEF7CWSu2KDORnvh%2BG1roeuEDhhxY6ZOAbj33dTOtr%2BSD6k%2FsgyMjqzE9qhjsoRCQeglKliJmhhW3EtBI4GyB8lp%2F2hv6WZnT3MYQh8lG71FYgHf1VrNeWrZeYRAH8njWjZ8tQmIeuVtQ07fjq3zoLq6g%2FwddDEpP%2Fnl8jOHgLsRUM7xtG4B%2BCN2h9yGOkg6kV0lW%2FDE12Iep8CA%3D%3D">Horizon Report</a>
                 </div>
             </div>
         </div>
 
-        <div class="folder" id="other-resources-folder">
-            <h2 onclick="toggleFolder('other-resources-folder')">Other Resources</h2>
-            <div class="resources">
-                <div>
-                    <h3>Resource 1: Digital Tools for Educators</h3>
-                    <p>A guide to the best digital tools for teachers...</p>
-                    <a href="https://www.example.com" target="_blank">Read more</a>
-                </div>
-                <div>
-                    <h3>Resource 2: Online Learning Platforms</h3>
-                    <p>Comparing various online platforms for remote learning...</p>
-                    <a href="https://www.example.com" target="_blank">Read more</a>
-                </div>
-            </div>
-        </div>
-
-        <footer>
-            <p>&copy; 2025 Cool Tools | All rights reserved.</p>
-        </footer>
     </div>
+
+    <footer>
+        <p>&copy; 2025 Cool Tools. All rights reserved.</p>
+    </footer>
 
     <script>
         function toggleFolder(folderId) {
-            var folder = document.getElementById(folderId);
-            var resources = folder.querySelector('.resources');
-            resources.style.display = resources.style.display === 'none' ? 'block' : 'none';
+            const folder = document.getElementById(folderId);
+            folder.classList.toggle('open');
         }
     </script>
 </body>
