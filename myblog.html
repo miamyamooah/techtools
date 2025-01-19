@@ -6,11 +6,11 @@
     <title>Cool Tools</title>
     <style> 
     body {
-        font-family: 'Alegreya Sans', literata; /* Alegreya Sans for regular text */
+        font-family: 'Alegreya Sans', literata;
         margin: 0;
         padding: 0;
-        background-color: #3D7A93; /* Blue background color */
-        color: #EBFCFF; /* Light text color */
+        background-color: #3D7A93;
+        color: #EBFCFF;
     }
 
     .container {
@@ -19,8 +19,8 @@
     }
 
     header {
-        background-color: #3D7A93; /* Background color remains the same */
-        color: #EBFCFF; /* Light text color */
+        background-color: #3D7A93;
+        color: #EBFCFF;
         padding: 30px 0;
         text-align: center;
     }
@@ -28,13 +28,13 @@
     header h1 {
         margin: 0;
         font-size: 2.5em;
-        font-family: 'literata', literata; /* Alegreya Sans font for headings */
+        font-family: 'literata', literata;
     }
 
     header p {
         font-size: 1.2em;
         margin: 10px 0 0;
-        font-family: 'Alegreya Sans', literata; /* Alegreya Sans for regular text */
+        font-family: 'Alegreya Sans', literata;
     }
 
     /* Centered Image under Blog Title */
@@ -43,14 +43,14 @@
     }
 
     .centered-image {
-        width: 100%; /* You can adjust this to your preference */
+        width: 100%;
         max-width: 900px;
         display: block;
         margin: 0 auto;
     }
 
     nav {
-        background-color: #2C5B73; /* Darker blue for contrast */
+        background-color: #2C5B73;
     }
 
     nav ul {
@@ -66,7 +66,7 @@
     }
 
     nav ul li a {
-        color: #EBFCFF; /* Light text color for links */
+        color: #EBFCFF;
         text-decoration: none;
         font-size: 1.2em;
         font-family: 'Alegreya Sans', literata;
@@ -74,7 +74,7 @@
 
     nav ul li a:hover {
         text-decoration: underline;
-        color: #F1F1F1; /* Lighter hover color */
+        color: #F1F1F1;
     }
 
     #about {
@@ -83,7 +83,7 @@
         margin: 40px auto;
         padding: 20px;
         background-color: white;
-        color: #3D7A93; /* Text color */
+        color: #3D7A93;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
@@ -111,7 +111,7 @@
 
     .video-container iframe {
         width: 48%;
-        height: 315px; /* Standard YouTube video size */
+        height: 315px;
         border: none;
     }
 
@@ -121,7 +121,7 @@
         margin: 40px auto;
         padding: 20px;
         background-color: white;
-        color: #3D7A93; /* Text color */
+        color: #3D7A93;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
@@ -131,40 +131,46 @@
         font-family: 'Alegreya Sans', literata;
     }
 
-    #importance-of-technology p {
+    /* Dropdown button styles */
+    .dropdown {
+        background-color: #3D7A93;
+        color: white;
+        border: none;
+        padding: 10px;
         font-size: 1.2em;
         font-family: 'Alegreya Sans', literata;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        margin-bottom: 10px;
     }
 
-    #tools {
-        text-align: center;
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 20px;
+    .dropdown:hover {
+        background-color: #2C5B73;
+    }
+
+    .dropdown-content {
+        display: none;
         background-color: white;
-        color: #3D7A93; /* Text color */
+        color: #3D7A93;
+        padding: 15px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
     }
 
-    #tools h2 {
-        font-size: 2em;
-        font-family: 'Alegreya Sans', literata;
-    }
-
-    #tools ul {
+    .dropdown-content ul {
         list-style-type: none;
         padding: 0;
     }
 
-    #tools ul li {
+    .dropdown-content ul li {
         font-size: 1.2em;
-        margin-bottom: 15px;
     }
 
     footer {
-        background-color: #3D7A93; /* Blue footer */
-        color: #EBFCFF; /* Light text color */
+        background-color: #3D7A93;
+        color: #EBFCFF;
         padding: 10px 0;
         text-align: center;
     }
@@ -210,27 +216,33 @@
             </div>
         </section>
 
-       <section id="importance-of-technology">
+        <section id="importance-of-technology">
             <h2>Why Technology is Important in Instructional Design</h2>
             <p>Technology plays a vital role in instructional design by enhancing the way learning is delivered and experienced. It enables educators and instructional designers to create interactive, engaging, and personalized learning experiences that cater to diverse learner needs.</p>
 
-            <h3>Benefits of Technology in Instructional Design</h3>
-            <ul>
-                <li><strong>Enhanced Engagement:</strong> Interactive tools like quizzes, simulations, and multimedia content keep learners engaged and actively involved.</li>
-                <li><strong>Accessibility:</strong> Technology makes learning accessible to a wider audience, offering options for remote learning, adaptable formats, and inclusive designs for all learners.</li>
-                <li><strong>Collaboration:</strong> Digital tools foster collaboration and communication among students, peers, and instructors, creating more dynamic learning environments.</li>
-                <li><strong>Data-Driven Decisions:</strong> With technology, instructional designers can collect and analyze learner data to continuously improve learning strategies and outcomes.</li>
-            </ul>
+            <button class="dropdown">Benefits of Technology</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><strong>Enhanced Engagement:</strong> Interactive tools like quizzes, simulations, and multimedia content keep learners engaged and actively involved.</li>
+                    <li><strong>Accessibility:</strong> Technology makes learning accessible to a wider audience, offering options for remote learning, adaptable formats, and inclusive designs for all learners.</li>
+                    <li><strong>Collaboration:</strong> Digital tools foster collaboration and communication among students, peers, and instructors, creating more dynamic learning environments.</li>
+                    <li><strong>Data-Driven Decisions:</strong> With technology, instructional designers can collect and analyze learner data to continuously improve learning strategies and outcomes.</li>
+                </ul>
+            </div>
 
-            <h3>Current Trends in Educational Technology</h3>
-            <ul>
-                <li><strong>Adaptive Learning:</strong> Tools that adjust learning content based on student progress, creating customized learning pathways for each individual.</li>
-                <li><strong>Gamification:</strong> Incorporating game-like elements such as points, badges, and leaderboards to make learning more engaging and fun.</li>
-                <li><strong>Artificial Intelligence (AI):</strong> AI-powered tools are helping instructional designers personalize learning, automate administrative tasks, and assess learner progress more efficiently.</li>
-            </ul>
+            <button class="dropdown">Current Trends in Educational Technology</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><strong>Adaptive Learning:</strong> Tools that adjust learning content based on student progress, creating customized learning pathways for each individual.</li>
+                    <li><strong>Gamification:</strong> Incorporating game-like elements such as points, badges, and leaderboards to make learning more engaging and fun.</li>
+                    <li><strong>Artificial Intelligence (AI):</strong> AI-powered tools are helping instructional designers personalize learning, automate administrative tasks, and assess learner progress more efficiently.</li>
+                </ul>
+            </div>
 
-            <h3>Real-World Applications</h3>
-            <p>Instructional designers are increasingly utilizing technology to create interactive eLearning courses, virtual simulations, and multimedia content that support diverse learning needs. Tools like <a href="https://rise.articulate.com" target="_blank">Rise 360</a> and <a href="https://padlet.com" target="_blank">Padlet</a> help instructors design collaborative, student-centered lessons that facilitate learning in dynamic, digital environments.</p>
+            <button class="dropdown">Real-World Applications</button>
+            <div class="dropdown-content">
+                <p>Instructional designers are increasingly utilizing technology to create interactive eLearning courses, virtual simulations, and multimedia content that support diverse learning needs. Tools like <a href="https://rise.articulate.com" target="_blank">Rise 360</a> and <a href="https://padlet.com" target="_blank">Padlet</a> help instructors design collaborative, student-centered lessons that facilitate learning in dynamic, digital environments.</p>
+            </div>
         </section>
 
         <section id="tools">
@@ -246,8 +258,18 @@
         </section>
 
         <footer>
-            <p>&copy; 2025 Cool Tools | All rights reserved.</p>
+            <p>© 2025 Cool Tools Blog. All rights reserved.</p>
         </footer>
     </div>
+
+    <script>
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach((dropdown) => {
+            dropdown.addEventListener('click', () => {
+                const content = dropdown.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
 </body>
 </html>
