@@ -6,145 +6,168 @@
     <title>Cool Tools</title>
     <style> 
     body {
-    font-family: 'Alegreya Sans', literata; /* Alegreya Sans for regular text */
-    margin: 0;
-    padding: 0;
-    background-color: #3D7A93; /* Blue background color */
-    color: #EBFCFF; /* Light text color */
-}
+        font-family: 'Alegreya Sans', literata; /* Alegreya Sans for regular text */
+        margin: 0;
+        padding: 0;
+        background-color: #3D7A93; /* Blue background color */
+        color: #EBFCFF; /* Light text color */
+    }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
 
-header {
-    background-color: #3D7A93; /* Background color remains the same */
-    color: #EBFCFF; /* Light text color */
-    padding: 30px 0;
-    text-align: center;
-}
+    header {
+        background-color: #3D7A93; /* Background color remains the same */
+        color: #EBFCFF; /* Light text color */
+        padding: 30px 0;
+        text-align: center;
+    }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    font-family: 'literata', literata; /* Alegreya Sans font for headings */
-}
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        font-family: 'literata', literata; /* Alegreya Sans font for headings */
+    }
 
-header p {
-    font-size: 1.2em;
-    margin: 10px 0 0;
-    font-family: 'Alegreya Sans', literata; /* Alegreya Sans for regular text */
-}
+    header p {
+        font-size: 1.2em;
+        margin: 10px 0 0;
+        font-family: 'Alegreya Sans', literata; /* Alegreya Sans for regular text */
+    }
 
-/* Centered Image under Blog Title */
-.header-image {
-    margin: 20px 0;
-}
+    /* Centered Image under Blog Title */
+    .header-image {
+        margin: 20px 0;
+    }
 
-.centered-image {
-    width: 100%; /* You can adjust this to your preference */
-    max-width: 900px;
-    display: block;
-    margin: 0 auto;
-}
+    .centered-image {
+        width: 100%; /* You can adjust this to your preference */
+        max-width: 900px;
+        display: block;
+        margin: 0 auto;
+    }
 
-nav {
-    background-color: #2C5B73; /* Darker blue for contrast */
-}
+    nav {
+        background-color: #2C5B73; /* Darker blue for contrast */
+    }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
 
-nav ul li {
-    margin: 0 15px;
-}
+    nav ul li {
+        margin: 0 15px;
+    }
 
-nav ul li a {
-    color: #EBFCFF; /* Light text color for links */
-    text-decoration: none;
-    font-size: 1.2em;
-    font-family: 'Alegreya Sans', literata;
-}
+    nav ul li a {
+        color: #EBFCFF; /* Light text color for links */
+        text-decoration: none;
+        font-size: 1.2em;
+        font-family: 'Alegreya Sans', literata;
+    }
 
-nav ul li a:hover {
-    text-decoration: underline;
-    color: #F1F1F1; /* Lighter hover color */
-}
+    nav ul li a:hover {
+        text-decoration: underline;
+        color: #F1F1F1; /* Lighter hover color */
+    }
 
-#about {
-    text-align: center;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: white;
-    color: #3D7A93; /* Text color */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.about-content p {
-    font-size: 1.2em;
-    font-family: 'Alegreya Sans', literata;
-}
+    #about {
+        text-align: center;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: white;
+        color: #3D7A93; /* Text color */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-#importance-of-technology {
-    text-align: center;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: white;
-    color: #3D7A93; /* Text color */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    .about-content p {
+        font-size: 1.2em;
+        font-family: 'Alegreya Sans', literata;
+    }
 
-#importance-of-technology h2 {
-    font-size: 2em;
-    font-family: 'Alegreya Sans', literata;
-}
+    #video-section {
+        text-align: center;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: white;
+        color: #3D7A93;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-#importance-of-technology p {
-    font-size: 1.2em;
-    font-family: 'Alegreya Sans', literata;
-}
+    .video-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
 
-#tools {
-    text-align: center;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: white;
-    color: #3D7A93; /* Text color */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    .video-container iframe {
+        width: 48%;
+        height: 315px; /* Standard YouTube video size */
+        border: none;
+    }
 
-#tools h2 {
-    font-size: 2em;
-    font-family: 'Alegreya Sans', literata;
-}
+    #importance-of-technology {
+        text-align: center;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: white;
+        color: #3D7A93; /* Text color */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-#tools ul {
-    list-style-type: none;
-    padding: 0;
-}
+    #importance-of-technology h2 {
+        font-size: 2em;
+        font-family: 'Alegreya Sans', literata;
+    }
 
-#tools ul li {
-    font-size: 1.2em;
-    margin-bottom: 15px;
-}
+    #importance-of-technology p {
+        font-size: 1.2em;
+        font-family: 'Alegreya Sans', literata;
+    }
 
-footer {
-    background-color: #3D7A93; /* Blue footer */
-    color: #EBFCFF; /* Light text color */
-    padding: 10px 0;
-    text-align: center;
-}
+    #tools {
+        text-align: center;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: white;
+        color: #3D7A93; /* Text color */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #tools h2 {
+        font-size: 2em;
+        font-family: 'Alegreya Sans', literata;
+    }
+
+    #tools ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #tools ul li {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        background-color: #3D7A93; /* Blue footer */
+        color: #EBFCFF; /* Light text color */
+        padding: 10px 0;
+        text-align: center;
+    }
     </style>
 </head>
 <body>
@@ -175,6 +198,15 @@ footer {
                     This blog serves as a space to share my research, insights, and reflections on the evolving role of technology in instructional design. 
                     Join me as I explore new tools, trends, and ideas shaping the future!
                 </p>
+            </div>
+        </section>
+
+        <!-- New Video Section -->
+        <section id="video-section">
+            <h2>Featured Videos</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/1SOySp8QJtk" title="Video 1"></iframe>
+                <iframe src="https://www.youtube.com/embed/UrvFotxTxF4" title="Video 2"></iframe>
             </div>
         </section>
 
