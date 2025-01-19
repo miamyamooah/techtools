@@ -4,133 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Tools</title>
-    <style> 
-    body {
-    font-family: 'Alegreya Sans', literata; /* Alegreya Sans for regular text */
-    margin: 0;
-    padding: 0;
-    background-color: #3D7A93; /* Blue background color */
-    color: #EBFCFF; /* Light text color */
-}
+    <style>
+        body {
+            font-family: 'Alegreya Sans', literata; 
+            margin: 0;
+            padding: 0;
+            background-color: #3D7A93; /* Blue background color */
+            color: #EBFCFF; /* Light text color */
+        }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
 
-header {
-    background-color: #3D7A93; /* Background color remains the same */
-    color: #EBFCFF; /* Light text color */
-    padding: 30px 0;
-    text-align: center;
-}
+        header {
+            background-color: #3D7A93; 
+            color: #EBFCFF; 
+            padding: 30px 0;
+            text-align: center;
+        }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    font-family: 'literata', literata; /* Alegreya Sans font for headings */
-}
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-family: 'literata', literata; 
+        }
 
-header p {
-    font-size: 1.2em;
-    margin: 10px 0 0;
-    font-family: 'Alegreya Sans', literata; /* Alegreya Sans for regular text */
-}
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+            font-family: 'Alegreya Sans', literata;
+        }
 
-/* Centered Image under Blog Title */
-.header-image {
-    margin: 20px 0;
-}
+        nav {
+            background-color: #2C5B73; 
+        }
 
-.centered-image {
-    width: 80%; /* You can adjust this to your preference */
-    max-width: 600px;
-    display: block;
-    margin: 0 auto;
-}
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
 
-nav {
-    background-color: #2C5B73; /* Darker blue for contrast */
-}
+        nav ul li {
+            margin: 0 15px;
+        }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
+        nav ul li a {
+            color: #EBFCFF; 
+            text-decoration: none;
+            font-size: 1.2em;
+            font-family: 'Alegreya Sans', literata;
+        }
 
-nav ul li {
-    margin: 0 15px;
-}
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: #F1F1F1; 
+        }
 
-nav ul li a {
-    color: #EBFCFF; /* Light text color for links */
-    text-decoration: none;
-    font-size: 1.2em;
-    font-family: 'Alegreya Sans', literata;
-}
+        #about {
+            text-align: center;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            color: #3D7A93; 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-nav ul li a:hover {
-    text-decoration: underline;
-    color: #F1F1F1; /* Lighter hover color */
-}
+        #importance-of-technology {
+            padding: 40px 20px;
+            background-color: #F0F8FF; 
+            color: #333;
+            text-align: center;
+        }
 
-#about {
-    text-align: center;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: white;
-    color: #3D7A93; /* Text color */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.about-content p {
-    font-size: 1.2em;
-    font-family: 'Alegreya Sans', literata;
-}
-        
-main {
-    padding: 30px 0;
-}
+        #importance-of-technology h2 {
+            font-size: 2em;
+            color: #3D7A93; 
+            margin-bottom: 20px;
+        }
 
-.blog-posts article {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+        #importance-of-technology h3 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #3D7A93;
+        }
 
-.blog-posts article h2 {
-    font-size: 1.8em;
-    color: #3D7A93; /* Blue color for post titles */
-    font-family: 'Alegreya Sans', literata; /* Alegreya Sans font for post titles */
-}
+        #importance-of-technology ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-.blog-posts article p {
-    font-size: 1.2em;
-    color: #666;
-}
+        #importance-of-technology ul li {
+            font-size: 1.2em;
+            color: #666;
+            margin: 10px 0;
+        }
 
-.blog-posts article a {
-    text-decoration: none;
-    color: #3D7A93; /* Blue color for links */
-    font-weight: bold;
-    font-family: 'Alegreya Sans',literata;
-}
+        #importance-of-technology a {
+            color: #3D7A93;
+            text-decoration: none;
+        }
 
-.blog-posts article a:hover {
-    text-decoration: underline;
-}
+        #importance-of-technology a:hover {
+            text-decoration: underline;
+        }
 
-footer {
-    background-color: #3D7A93; /* Blue footer */
-    color: #EBFCFF; /* Light text color */
-    padding: 10px 0;
-    text-align: center;}
+        main {
+            padding: 30px 0;
+        }
+
+        footer {
+            background-color: #3D7A93; 
+            color: #EBFCFF;
+            padding: 10px 0;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -142,37 +136,60 @@ footer {
 
         <nav>
             <ul>
-                <li><a href="https://miamyamooah.github.io/techtools/myblog.html#">Home</a></li>
-                <li><a href="https://miamyamooah.github.io/techtools/readings.html#">Readings</a></li>
-                <li><a href="https://miamyamooah.github.io/techtools/blogentries.html#">Blog Entries</a></li>
-                <li><a href="https://miamyamooah.github.io/techtools/contactme.html#">Contact Me</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#readings">Readings</a></li>
+                <li><a href="#blogentries">Blog Entries</a></li>
+                <li><a href="#contactme">Contact Me</a></li>
             </ul>
         </nav>
-<!-- Space for the image under the title -->
-            <div class="header-image">
-                <img src="https://dochub.com/mariah-mchale/JWop0ZAKk83lBW1VrYa9GP/welcome-to-my-blog-png" class="centered-image">
-                
-            </div>
+
         <section id="about">
-    <div class="about-content">
-        <p>
-            As technology continues to shape our world, keeping up with the changes can be challenging. 
-            This blog serves as a space to share my research, insights, and reflections on the evolving role of technology in instructional design. 
-            Join me as I explore new tools, trends, and ideas shaping the future!
-        </p>
-    </div>
-        </section>      
-        <main>
-            <div class="blog-posts">
-                <!-- Example blog post -->
-                <article>
-                    <h2>Blog Post Title</h2>
-                    <p>Welcome to my first post!</p>
-                    <a href="#">Read more...</a>
-                </article>
-                <!-- Additional blog posts can be added here -->
+            <div class="about-content">
+                <p>
+                    As technology continues to shape our world, keeping up with the changes can be challenging. 
+                    This blog serves as a space to share my research, insights, and reflections on the evolving role of technology in instructional design. 
+                    Join me as I explore new tools, trends, and ideas shaping the future!
+                </p>
             </div>
-        </main>
+        </section>
+
+        <!-- New Section: Why Technology is Important in Instructional Design -->
+        <section id="importance-of-technology">
+            <h2>Why Technology is Important in Instructional Design</h2>
+            <p>Technology plays a vital role in instructional design by enhancing the way learning is delivered and experienced. It enables educators and instructional designers to create interactive, engaging, and personalized learning experiences that cater to diverse learner needs.</p>
+
+            <h3>Benefits of Technology in Instructional Design</h3>
+            <ul>
+                <li><strong>Enhanced Engagement:</strong> Interactive tools like quizzes, simulations, and multimedia content keep learners engaged and actively involved.</li>
+                <li><strong>Accessibility:</strong> Technology makes learning accessible to a wider audience, offering options for remote learning, adaptable formats, and inclusive designs for all learners.</li>
+                <li><strong>Collaboration:</strong> Digital tools foster collaboration and communication among students, peers, and instructors, creating more dynamic learning environments.</li>
+                <li><strong>Data-Driven Decisions:</strong> With technology, instructional designers can collect and analyze learner data to continuously improve learning strategies and outcomes.</li>
+            </ul>
+
+            <h3>Current Trends in Educational Technology</h3>
+            <p>As technology continues to evolve, so does its potential to shape the future of instructional design. Here are a few trends to watch:</p>
+            <ul>
+                <li><strong>Adaptive Learning:</strong> Tools that adjust learning content based on student progress, creating customized learning pathways for each individual.</li>
+                <li><strong>Gamification:</strong> Incorporating game-like elements such as points, badges, and leaderboards to make learning more engaging and fun.</li>
+                <li><strong>Artificial Intelligence (AI):</strong> AI-powered tools are helping instructional designers personalize learning, automate administrative tasks, and assess learner progress more efficiently.</li>
+            </ul>
+
+            <h3>Real-World Applications</h3>
+            <p>Instructional designers are increasingly utilizing technology to create interactive eLearning courses, virtual simulations, and multimedia content that support diverse learning needs. Tools like <a href="https://rise.articulate.com" target="_blank">Rise 360</a> and <a href="https://padlet.com" target="_blank">Padlet</a> help instructors design collaborative, student-centered lessons that facilitate learning in dynamic, digital environments.</p>
+        </section>
+
+        <!-- Section: Favorite Online Tools -->
+        <section id="tools">
+            <h2>My Favorite Online Tools</h2>
+            <ul>
+                <li><strong>Canva:</strong> A user-friendly graphic design tool for creating visuals.</li>
+                <li><strong>Padlet:</strong> A collaborative platform for creating and sharing interactive boards.</li>
+                <li><strong>Scrintal:</strong> A visual knowledge management tool for organizing ideas and content.</li>
+                <li><strong>Rise 360:</strong> A web-based authoring tool for building responsive eLearning courses.</li>
+                <li><strong>Sketch.MetaDemoLab:</strong> A platform for creating interactive prototypes and demos.</li>
+                <li><strong>Coggle:</strong> A mind-mapping tool that helps visualize ideas and organize information.</li>
+            </ul>
+        </section>
 
         <footer>
             <p>&copy; 2025 Cool Tools | All rights reserved.</p>
