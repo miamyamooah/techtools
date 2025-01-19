@@ -4,117 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Tools</title>
-    <style>
-        body {
-            font-family: 'Alegreya Sans', literata; 
-            margin: 0;
-            padding: 0;
-            background-color: #3D7A93; /* Blue background color */
-            color: #EBFCFF; /* Light text color */
-        }
+    <style> 
+    body {
+    font-family: 'Alegreya Sans', literata; /* Alegreya Sans for regular text */
+    margin: 0;
+    padding: 0;
+    background-color: #3D7A93; /* Blue background color */
+    color: #EBFCFF; /* Light text color */
+}
 
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
 
-        header {
-            background-color: #3D7A93; 
-            color: #EBFCFF; 
-            padding: 30px 0;
-            text-align: center;
-            border-bottom: 2px solid #EBFCFF;
-        }
+header {
+    background-color: #3D7A93; /* Background color remains the same */
+    color: #EBFCFF; /* Light text color */
+    padding: 30px 0;
+    text-align: center;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            font-family: 'literata', literata; 
-        }
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'literata', literata; /* Alegreya Sans font for headings */
+}
 
-        header p {
-            font-size: 1.2em;
-            margin: 10px 0 0;
-            font-family: 'Alegreya Sans', literata;
-        }
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+    font-family: 'Alegreya Sans', literata; /* Alegreya Sans for regular text */
+}
 
-        nav {
-            background-color: #2C5B73; 
-        }
+/* Centered Image under Blog Title */
+.header-image {
+    margin: 20px 0;
+}
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
+.centered-image {
+    width: 80%; /* You can adjust this to your preference */
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
 
-        nav ul li {
-            margin: 0 15px;
-        }
+nav {
+    background-color: #2C5B73; /* Darker blue for contrast */
+}
 
-        nav ul li a {
-            color: #EBFCFF; 
-            text-decoration: none;
-            font-size: 1.2em;
-            font-family: 'Alegreya Sans', literata;
-        }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
 
-        nav ul li a:hover {
-            text-decoration: underline;
-            color: #F1F1F1; 
-        }
+nav ul li {
+    margin: 0 15px;
+}
 
-        section {
-            background-color: white;
-            color: #3D7A93; 
-            padding: 30px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+nav ul li a {
+    color: #EBFCFF; /* Light text color for links */
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Alegreya Sans', literata;
+}
 
-        section h2 {
-            text-align: center;
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #3D7A93;
-        }
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #F1F1F1; /* Lighter hover color */
+}
 
-        section p {
-            font-size: 1.2em;
-            text-align: center;
-            line-height: 1.6;
-            color: #666;
-        }
+#about {
+    text-align: center;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    color: #3D7A93; /* Text color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.about-content p {
+    font-size: 1.2em;
+    font-family: 'Alegreya Sans', literata;
+}
 
-        section ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-        }
+#importance-of-technology {
+    text-align: center;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    color: #3D7A93; /* Text color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-        section ul li {
-            font-size: 1.2em;
-            color: #666;
-            margin: 10px 0;
-        }
+#importance-of-technology h2 {
+    font-size: 2em;
+    font-family: 'Alegreya Sans', literata;
+}
 
-        section img {
-            display: block;
-            margin: 20px auto;
-            width: 80%;
-            max-width: 400px;
-            border-radius: 8px;
-        }
+#importance-of-technology p {
+    font-size: 1.2em;
+    font-family: 'Alegreya Sans', literata;
+}
 
-        footer {
-            background-color: #3D7A93; 
-            color: #EBFCFF;
-            padding: 10px 0;
-            text-align: center;
-        }
+#tools {
+    text-align: center;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    color: #3D7A93; /* Text color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#tools h2 {
+    font-size: 2em;
+    font-family: 'Alegreya Sans', literata;
+}
+
+#tools ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#tools ul li {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #3D7A93; /* Blue footer */
+    color: #EBFCFF; /* Light text color */
+    padding: 10px 0;
+    text-align: center;
+}
     </style>
 </head>
 <body>
@@ -126,24 +156,29 @@
 
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#readings">Readings</a></li>
-                <li><a href="#blogentries">Blog Entries</a></li>
-                <li><a href="#contactme">Contact Me</a></li>
+                <li><a href="https://miamyamooah.github.io/techtools/myblog.html#">Home</a></li>
+                <li><a href="https://miamyamooah.github.io/techtools/readings.html#">Readings</a></li>
+                <li><a href="https://miamyamooah.github.io/techtools/blogentries.html#">Blog Entries</a></li>
+                <li><a href="https://miamyamooah.github.io/techtools/contactme.html#">Contact Me</a></li>
             </ul>
         </nav>
 
+        <!-- Space for the image under the title -->
+        <div class="header-image">
+            <img src="https://dochub.com/mariah-mchale/JWop0ZAKk83lBW1VrYa9GP/welcome-to-my-blog-png" class="centered-image">
+        </div>
+
         <section id="about">
-            <img src="https://dochub.com/mariah-mchale/JWop0ZAKk83lBW1VrYa9GP/welcome-to-my-blog-png" alt="Cool Tools Logo"> 
-            <h2>About the Blog</h2>
-            <p>
-                As technology continues to shape our world, keeping up with the changes can be challenging. 
-                This blog serves as a space to share my research, insights, and reflections on the evolving role of technology in instructional design. 
-                Join me as I explore new tools, trends, and ideas shaping the future!
-            </p>
+            <div class="about-content">
+                <p>
+                    As technology continues to shape our world, keeping up with the changes can be challenging. 
+                    This blog serves as a space to share my research, insights, and reflections on the evolving role of technology in instructional design. 
+                    Join me as I explore new tools, trends, and ideas shaping the future!
+                </p>
+            </div>
         </section>
 
-        <section id="importance-of-technology">
+       <section id="importance-of-technology">
             <h2>Why Technology is Important in Instructional Design</h2>
             <p>Technology plays a vital role in instructional design by enhancing the way learning is delivered and experienced. It enables educators and instructional designers to create interactive, engaging, and personalized learning experiences that cater to diverse learner needs.</p>
 
@@ -165,19 +200,18 @@
             <h3>Real-World Applications</h3>
             <p>Instructional designers are increasingly utilizing technology to create interactive eLearning courses, virtual simulations, and multimedia content that support diverse learning needs. Tools like <a href="https://rise.articulate.com" target="_blank">Rise 360</a> and <a href="https://padlet.com" target="_blank">Padlet</a> help instructors design collaborative, student-centered lessons that facilitate learning in dynamic, digital environments.</p>
         </section>
-        
-<section id="tools">
-    <h2>My Favorite Online Tools</h2>
-    <ul>
-        <li><strong><a href="https://www.canva.com" target="_blank" style="color: #3D7A93;">Canva</a>:</strong> A user-friendly graphic design tool for creating visuals.</li>
-        <li><strong><a href="https://padlet.com" target="_blank" style="color: #3D7A93;">Padlet</a>:</strong> A collaborative platform for creating and sharing interactive boards.</li>
-        <li><strong><a href="https://scrintal.com" target="_blank" style="color: #3D7A93;">Scrintal</a>:</strong> A visual knowledge management tool for organizing ideas and content.</li>
-        <li><strong><a href="https://rise.articulate.com" target="_blank" style="color: #3D7A93;">Rise 360</a>:</strong> A web-based authoring tool for building responsive eLearning courses.</li>
-        <li><strong><a href="https://sketch.metademolab.com" target="_blank" style="color: #3D7A93;">Sketch.MetaDemoLab</a>:</strong> A platform for creating interactive prototypes and demos.</li>
-        <li><strong><a href="https://coggle.it" target="_blank" style="color: #3D7A93;">Coggle</a>:</strong> A mind-mapping tool that helps visualize ideas and organize information.</li>
-    </ul>
-</section>
 
+        <section id="tools">
+            <h2>Favorite Tools for Instructional Design</h2>
+            <ul>
+                <li><a href="https://www.canva.com" target="_blank">Canva</a>: A user-friendly graphic design tool that allows you to create stunning visuals, from presentations to social media posts.</li>
+                <li><a href="https://padlet.com" target="_blank">Padlet</a>: A virtual bulletin board for collaborative brainstorming, idea sharing, and project management.</li>
+                <li><a href="https://scrintal.com" target="_blank">Scrintal</a>: A visual note-taking platform for organizing and connecting ideas seamlessly.</li>
+                <li><a href="https://rise.articulate.com" target="_blank">Rise 360</a>: A powerful online tool for creating interactive and responsive e-learning courses.</li>
+                <li><a href="https://sketch.metademolab.com" target="_blank">Sketch</a>: A design tool for building wireframes and prototypes to map out digital learning experiences.</li>
+                <li><a href="https://coggle.it" target="_blank">Coggle</a>: A mind-mapping tool for visually organizing ideas and concepts in a clear and collaborative way.</li>
+            </ul>
+        </section>
 
         <footer>
             <p>&copy; 2025 Cool Tools | All rights reserved.</p>
