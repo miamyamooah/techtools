@@ -23,6 +23,7 @@
             color: #EBFCFF; 
             padding: 30px 0;
             text-align: center;
+            border-bottom: 2px solid #EBFCFF;
         }
 
         header h1 {
@@ -65,58 +66,45 @@
             color: #F1F1F1; 
         }
 
-        #about {
-            text-align: center;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
+        section {
             background-color: white;
             color: #3D7A93; 
+            padding: 30px;
+            margin-bottom: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        #importance-of-technology {
-            padding: 40px 20px;
-            background-color: #F0F8FF; 
-            color: #333;
+        section h2 {
             text-align: center;
-        }
-
-        #importance-of-technology h2 {
             font-size: 2em;
-            color: #3D7A93; 
             margin-bottom: 20px;
         }
 
-        #importance-of-technology h3 {
-            font-size: 1.5em;
-            margin-top: 20px;
-            color: #3D7A93;
+        section p {
+            font-size: 1.2em;
+            text-align: center;
+            line-height: 1.6;
         }
 
-        #importance-of-technology ul {
+        section ul {
             list-style-type: none;
             padding: 0;
         }
 
-        #importance-of-technology ul li {
+        section ul li {
             font-size: 1.2em;
             color: #666;
             margin: 10px 0;
+            text-align: center;
         }
 
-        #importance-of-technology a {
-            color: #3D7A93;
-            text-decoration: none;
-        }
-
-        #importance-of-technology a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            padding: 30px 0;
+        section img {
+            display: block;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 8px;
         }
 
         footer {
@@ -132,6 +120,7 @@
         <header>
             <h1>Cool Tools</h1>
             <p>A blog about navigating new technology tools</p>
+            <img src="your-image-link.jpg" alt="Cool Tools Logo"> <!-- Replace with your actual image URL -->
         </header>
 
         <nav>
@@ -144,13 +133,12 @@
         </nav>
 
         <section id="about">
-            <div class="about-content">
-                <p>
-                    As technology continues to shape our world, keeping up with the changes can be challenging. 
-                    This blog serves as a space to share my research, insights, and reflections on the evolving role of technology in instructional design. 
-                    Join me as I explore new tools, trends, and ideas shaping the future!
-                </p>
-            </div>
+            <h2>About the Blog</h2>
+            <p>
+                As technology continues to shape our world, keeping up with the changes can be challenging. 
+                This blog serves as a space to share my research, insights, and reflections on the evolving role of technology in instructional design. 
+                Join me as I explore new tools, trends, and ideas shaping the future!
+            </p>
         </section>
 
         <!-- New Section: Why Technology is Important in Instructional Design -->
@@ -167,7 +155,6 @@
             </ul>
 
             <h3>Current Trends in Educational Technology</h3>
-            <p>As technology continues to evolve, so does its potential to shape the future of instructional design. Here are a few trends to watch:</p>
             <ul>
                 <li><strong>Adaptive Learning:</strong> Tools that adjust learning content based on student progress, creating customized learning pathways for each individual.</li>
                 <li><strong>Gamification:</strong> Incorporating game-like elements such as points, badges, and leaderboards to make learning more engaging and fun.</li>
