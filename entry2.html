@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 Blog Post</title>
+   <style>
+        /* General Styles */
+        body {
+            font-family: 'Alegreya Sans', literata;
+            margin: 0;
+            padding: 0;
+            background-color: #3D7A93; /* Blue background color */
+            color: #EBFCFF;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #3D7A93;
+            color: #EBFCFF;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-family: 'literata', literata;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+            font-family: 'Alegreya Sans', literata;
+        }
+
+        nav {
+            background-color: #2C5B73;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #EBFCFF;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-family: 'Alegreya Sans', literata;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: #F1F1F1;
+        }
+
+        main {
+            padding: 30px 0;
+        }
+
+        /* Blog Post Content */
+        .post-content {
+            background-color: white;
+            padding: 20px;
+            max-width: 800px;
+            margin: 40px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-content h2 {
+            font-size: 2em;
+            color: #3D7A93;
+            font-family: 'Alegreya Sans', literata;
+        }
+
+        .post-content h3 {
+            font-size: 1.5em;
+            color: #3D7A93; 
+            font-family: 'Alegreya Sans', literata;
+        }
+            
+        .post-content p {
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .post-content ul, .post-content li {
+            font-size: 1.0em;            
+            color: #3D7A93;
+            line-height: 1.6;        
+        }
+
+        .post-content img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #3D7A93;
+            color: #EBFCFF;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .back-button {
+            background-color: #2C5B73;
+            color: #EBFCFF;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #1A4A5A;
+        }
+
+        /* Citations */
+        .citations {
+            background-color: white;
+            color: #3D7A93;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        .citations ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .citations ul li {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        /* Comment Section */
+        .comment-section {
+            margin-top: 40px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment-section h3 {
+            font-size: 1.8em;
+            color: #3D7A93;
+            font-family: 'Alegreya Sans', literata;
+        }
+
+        .comment-form input, .comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        .comment-form button {
+            background-color: #2C5B73;
+            color: #EBFCFF;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .comment-form button:hover {
+            background-color: #1A4A5A;
+        }
+
+        .comment-display {
+            margin-top: 20px;
+        }
+
+        .comment-display .comment {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .comment-display .comment h4 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #3D7A93;
+        }
+
+        .comment-display .comment p {
+            font-size: 1em;
+            color: #666;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cool Tools</h1>
+            <p>A blog about navigating new technology tools :)</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="https://miamyamooah.github.io/techtools/myblog.html#">Home</a></li>
+                <li><a href="https://miamyamooah.github.io/techtools/readings.html#">Readings</a></li>
+                <li><a href="https://miamyamooah.github.io/techtools/blogentries.html#">Blog Entries</a></li>
+                <li><a href="https://miamyamooah.github.io/techtools/contactme.html#">Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <a href="https://miamyamooah.github.io/techtools/blogentries.html#" class="back-button">Back to Blog Entries</a>
+
+        <main>
+            <div class="post-content">
+              <h2>M2 : Is AI Here To Stay? </h2>
+              <img src="https://i.pinimg.com/736x/3a/6b/51/3a6b510174e3dff9068cb718fef156d9.jpg" alt="Post 2">
+                <p>Artificial Intelligence (AI) is rapidly transforming education, offering innovative ways to enhance teaching and learning. From AI-powered tutors to personalized learning platforms, generative AI is reshaping the educational landscape. This week, let’s explore how AI is being used effectively in real-world teaching and learning environments.</p>
+                 <h3>AI-Powered Writing Assistants: A Game-Changer for Students</h3>
+                <p>One of the most impactful applications of generative AI in education is AI-powered writing assistants. Tools like Grammarly, QuillBot, and ChatGPT help students refine their writing, providing instant feedback on grammar, clarity, and coherence. These tools act as personal editors, allowing students to enhance their writing skills in real time. For instance, ChatGPT can assist students in brainstorming ideas, structuring essays, and even improving their academic tone. This is particularly beneficial for students who struggle with organizing their thoughts or for non-native English speakers looking to refine their language skills. The key here is that AI does not replace the writing process but rather augments it, encouraging students to think critically about their work.</p>
+                <h3>Personalized Learning with AI Tutors</h3>
+                <p>Another significant advancement is the rise of AI-powered tutoring systems like Khan Academy’s Khanmigo, ScribeSense, and Carnegie Learning’s AI-based math tutor. These platforms use AI to personalize learning experiences, adapting to individual student needs and providing targeted support in subjects like math, science, and language learning. For example, Carnegie Learning’s AI tutor analyzes students’ problem-solving approaches and provides step-by-step guidance tailored to their strengths and weaknesses. This ensures that learners receive personalized instruction at their own pace, reducing frustration and increasing engagement. Such AI-driven tutors are particularly useful in remote learning environments where students might not have immediate access to a teacher.</p>
+                <h3>AI in Teacher Support & Lesson Planning</h3>
+                <p>AI is not just for students—it’s also revolutionizing how educators plan lessons and assess student progress. Platforms like ScribeSense use AI to grade handwritten assignments, saving teachers hours of grading time while providing detailed analytics on student performance. Similarly, AI-driven lesson planning tools, such as Eduaide.AI, help teachers generate engaging lesson plans, quizzes, and activities tailored to their curriculum. One example is a high school English teacher using AI to create differentiated reading assignments. By leveraging generative AI, she can quickly adjust reading levels for diverse learners, ensuring that all students have access to appropriately challenging materials. This kind of AI integration enhances inclusivity and supports diverse learning styles.</p>
+                <h3>AI in Corporate Training & Professional Development</h3>
+                <p>Beyond K-12 and higher education, AI is transforming corporate training and professional development. Companies like Duolingo and Coursera utilize AI to personalize learning pathways for employees, ensuring they acquire relevant skills efficiently. For example, Duolingo’s AI-driven language courses adapt in real time based on a learner’s strengths and weaknesses. Similarly, corporate training programs are incorporating AI-driven simulations, allowing employees to practice skills in realistic, risk-free environments. These applications make learning more engaging and effective, reducing the time needed to master new concepts.</p>
+                <h3>Ethical Considerations & Challenges</h3>
+                <p>Despite its many advantages, AI in education comes with ethical considerations. Issues such as data privacy, bias in AI-generated content, and over-reliance on technology need to be addressed. Educators must ensure that AI remains a tool for enhancement rather than a crutch that diminishes critical thinking skills. Additionally, AI-generated content must be fact-checked and used responsibly. While AI can suggest ideas and refine language, students and educators should be mindful not to rely on it for original thought. Learning how to use AI effectively—rather than depend on it entirely—is a crucial skill in today’s digital world.</p>
+                <h3>The Future of AI in Education</h3>
+                <p>Generative AI is already proving to be a powerful ally in education, from personalized tutoring to enhanced teacher support. As technology continues to evolve, its role in learning will only expand. The key is to use AI as a collaborative tool—one that empowers students and teachers rather than replaces them. </p>
+                <p>What are your thoughts on AI in education? Have you used AI tools in your own learning or teaching experience? Share your insights in the comments below!</p>
+            </div>
+
+    <div class="comment-section">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form" action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <textarea name="comment" placeholder="Your Comment" rows="5" required></textarea>
+                    <button type="submit">Submit Comment</button>
+                </form>
+
+                <div class="comment-display">
+                    <div class="comment">
+                        <h4>Vincent Lei</h4>
+                        <p>AI tools are amazing! They really helped me with my writing and tutoring.</p>
+                    </div>
+                    <div class="comment">
+                        <h4>Leila Hammer</h4>
+                        <p>I agree! I think AI is a game-changer, but we must use it responsibly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="citations">
+                <h3>References</h3>
+                  <ul>
+                    <li>Khan Academy. (2023). Khanmigo: The AI-powered learning guide. Retrieved from www.khanacademy.org</li>
+                    <li>Carnegie Learning. (2023). AI-based math tutoring. Retrieved from www.carnegielearning.com</li>
+                    <li>Duolingo. (2023). AI-driven language learning. Retrieved from www.duolingo.com</li>
+                    <li>Trust, T. (2023). ChatGPT & education. Retrieved from www.edutopia.org</li>
+                    <li>Quinn, C., & Bernhardt, M. (2023). How ChatGPT3 impacts the future of L&D in an AI world. Retrieved from www.learntech.com</li>
+                    <li>Warber, J. (2023). How about we put learning at the center? Retrieved from www.edutopia.org</li>
+                    <li>Naranjo, J. (2023). Harnessing AI in L&D: Reviewing 2023 & imagining the future. Retrieved from www.trainingmag.com</li>
+                    <li>Trust, C. (2023). 7 useful prompts for instructional designers. Retrieved from www.instructionaldesign.org</li>
+                  </ul>
+            </div> 
+     </main>
+        
+        <footer>
+            <p>&copy; 2025 Cool Tools | All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
