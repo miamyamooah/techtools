@@ -196,6 +196,55 @@
             <p>Stay tuned for more blog posts that dive deeper into other tools, their uses, and tips to make the most of them!</p>            
             </div>
 
+              <!-- Comment Section -->
+<div class="comment-section">
+    <h3>Leave a Comment</h3>
+    <form id="comment-form" class="comment-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <textarea id="comment" placeholder="Your Comment" rows="4" required></textarea>
+        <button type="submit">Submit Comment</button>
+    </form>
+
+    <div class="comment-display" id="comment-display">
+        <!-- Comments will appear here -->
+    </div>
+</div>
+
+<script>
+    // Select form and display area
+    const form = document.getElementById('comment-form');
+    const nameInput = document.getElementById('name');
+    const commentInput = document.getElementById('comment');
+    const commentDisplay = document.getElementById('comment-display');
+
+    // Event listener to handle form submission
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission to server
+        
+        // Get user input
+        const name = nameInput.value.trim();
+        const comment = commentInput.value.trim();
+        
+        if (name && comment) {
+            // Create a new comment element
+            const commentElement = document.createElement('div');
+            commentElement.classList.add('comment');
+
+            // Set the comment content
+            commentElement.innerHTML = `
+                <h4>${name}</h4>
+                <p>${comment}</p>
+            `;
+
+            // Append the new comment to the comment display section
+            commentDisplay.appendChild(commentElement);
+
+            // Clear the form inputs
+            nameInput.value = '';
+            commentInput.value = '';
+        }
+    });
+</script>
             <div class="citations">
                 <h3>Citations</h3>
                 <ul>
