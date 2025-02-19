@@ -253,25 +253,55 @@
                 <p>What are your thoughts on AI in education? Have you used AI tools in your own learning or teaching experience? Share your insights in the comments below!</p>
             </div>
 
-    <div class="comment-section">
-                <h3>Leave a Comment</h3>
-                <form class="comment-form" action="#" method="POST">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <textarea name="comment" placeholder="Your Comment" rows="5" required></textarea>
-                    <button type="submit">Submit Comment</button>
-                </form>
+     <!-- Comment Section -->
+<div class="comment-section">
+    <h3>Leave a Comment</h3>
+    <form id="comment-form" class="comment-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <textarea id="comment" placeholder="Your Comment" rows="4" required></textarea>
+        <button type="submit">Submit Comment</button>
+    </form>
 
-                <div class="comment-display">
-                    <div class="comment">
-                        <h4>Vincent Lei</h4>
-                        <p>AI tools are amazing! They really helped me with my writing and tutoring.</p>
-                    </div>
-                    <div class="comment">
-                        <h4>Leila Hammer</h4>
-                        <p>I agree! I think AI is a game-changer, but we must use it responsibly.</p>
-                    </div>
-                </div>
-            </div>
+    <div class="comment-display" id="comment-display">
+        <!-- Comments will appear here -->
+    </div>
+</div>
+
+<script>
+    // Select form and display area
+    const form = document.getElementById('comment-form');
+    const nameInput = document.getElementById('name');
+    const commentInput = document.getElementById('comment');
+    const commentDisplay = document.getElementById('comment-display');
+
+    // Event listener to handle form submission
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission to server
+        
+        // Get user input
+        const name = nameInput.value.trim();
+        const comment = commentInput.value.trim();
+        
+        if (name && comment) {
+            // Create a new comment element
+            const commentElement = document.createElement('div');
+            commentElement.classList.add('comment');
+
+            // Set the comment content
+            commentElement.innerHTML = `
+                <h4>${name}</h4>
+                <p>${comment}</p>
+            `;
+
+            // Append the new comment to the comment display section
+            commentDisplay.appendChild(commentElement);
+
+            // Clear the form inputs
+            nameInput.value = '';
+            commentInput.value = '';
+        }
+    });
+</script>
 
             <div class="citations">
                 <h3>References</h3>
