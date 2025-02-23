@@ -257,14 +257,11 @@
 <div class="comment-section">
     <h3>Leave a Comment</h3>
     <form id="comment-form" class="comment-form">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <textarea id="comment" placeholder="Your Comment" rows="4" required></textarea>
-        <button type="submit">Submit Comment</button>
+        <input type="text" id="comment-name" placeholder="Your Name" required>
+        <textarea id="comment-text" placeholder="Your Comment" required></textarea>
+        <button type="submit">Submit</button>
     </form>
-
-    <div class="comment-display" id="comment-display">
-        <!-- Comments will appear here -->
-    </div>
+    <div id="comment-display" class="comment-display"></div>
 </div>
 
 <script>
@@ -323,5 +320,55 @@
         </footer>
 
     </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const commentForm = document.getElementById("comment-form");
+        const commentDisplay = document.getElementById("comment-display");
+
+        // Load saved comments from localStorage
+        function loadComments() {
+            const savedComments = JSON.parse(localStorage.getItem("comments")) || [];
+            commentDisplay.innerHTML = ""; // Clear previous content
+            savedComments.forEach(comment => {
+                displayComment(comment.name, comment.text);
+            });
+        }
+
+        // Function to display a comment
+        function displayComment(name, text) {
+            const commentDiv = document.createElement("div");
+            commentDiv.classList.add("comment");
+            commentDiv.innerHTML = `<h4>${name}</h4><p>${text}</p>`;
+            commentDisplay.appendChild(commentDiv);
+        }
+
+        // Handle comment submission
+        commentForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const nameInput = document.getElementById("comment-name");
+            const textInput = document.getElementById("comment-text");
+
+            const name = nameInput.value.trim();
+            const text = textInput.value.trim();
+
+            if (name && text) {
+                displayComment(name, text);
+
+                // Save comment to localStorage
+                const savedComments = JSON.parse(localStorage.getItem("comments")) || [];
+                savedComments.push({ name, text });
+                localStorage.setItem("comments", JSON.stringify(savedComments));
+
+                // Clear form
+                nameInput.value = "";
+                textInput.value = "";
+            }
+        });
+
+        // Load comments on page load
+        loadComments();
+    });
+</script>
+
 </body>
 </html>
