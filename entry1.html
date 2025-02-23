@@ -318,6 +318,54 @@
         </footer>
 
     </div>
-  
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const commentForm = document.getElementById("comment-form");
+        const commentDisplay = document.getElementById("comment-display");
+
+        // Load saved comments from localStorage
+        function loadComments() {
+            const savedComments = JSON.parse(localStorage.getItem("comments")) || [];
+            commentDisplay.innerHTML = ""; // Clear previous content
+            savedComments.forEach(comment => {
+                displayComment(comment.name, comment.text);
+            });
+        }
+
+        // Function to display a comment
+        function displayComment(name, text) {
+            const commentDiv = document.createElement("div");
+            commentDiv.classList.add("comment");
+            commentDiv.innerHTML = `<h4>${name}</h4><p>${text}</p>`;
+            commentDisplay.appendChild(commentDiv);
+        }
+
+        // Handle comment submission
+        commentForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const nameInput = document.getElementById("comment-name");
+            const textInput = document.getElementById("comment-text");
+
+            const name = nameInput.value.trim();
+            const text = textInput.value.trim();
+
+            if (name && text) {
+                displayComment(name, text);
+
+                // Save comment to localStorage
+                const savedComments = JSON.parse(localStorage.getItem("comments")) || [];
+                savedComments.push({ name, text });
+                localStorage.setItem("comments", JSON.stringify(savedComments));
+
+                // Clear form
+                nameInput.value = "";
+                textInput.value = "";
+            }
+        });
+
+        // Load comments on page load
+        loadComments();
+    });
+</script>
 </body>
 </html>
