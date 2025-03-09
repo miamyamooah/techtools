@@ -265,7 +265,65 @@
                 <p>Seek by iNaturalist is more than just an app—it’s a gateway to interactive, immersive learning that takes students out of the classroom and into the wild. With its combination of AR technology, real-time identification, and hands-on exploration, Seek empowers students to engage with the world around them and become active learners.</p>
                 <p>If you’re looking to make your lessons more exciting, meaningful, and educational, give Seek a try in your next biology class or outdoor lesson. It’s the perfect tool to help students see nature through a whole new lens!</p>
             </div>
+ <div id="comments-section">
+        <h2>Leave a Comment</h2>
+        <div id="comments-list"></div>
+        <form id="comment-form">
+            <input type="text" id="comment-name" placeholder="Your Name" required />
+            <textarea id="comment-text" placeholder="Your comment..." required></textarea>
+            <button type="submit">Post Comment</button>
+        </form>
+        <div id="comment-display" class="comment-display"></div>
+    </div>
 
+    <script>
+         const form = document.getElementById('comment-form');
+        const nameInput = document.getElementById('name');
+        const commentInput = document.getElementById('comment');
+        const commentDisplay = document.getElementById('comment-display');
+
+        // Ensure to use a unique identifier for each blog post, for example, using an ID or a slug:
+        const blogPostId = 'uniqueBlogPostId123'; // This should be unique for each blog post
+
+        // Load comments specific to the current blog post
+        function loadComments() {
+            const comments = JSON.parse(localStorage.getItem(blogPostId)) || [];
+            const commentsList = document.getElementById('comments-list');
+            commentsList.innerHTML = '';
+            comments.forEach(comment => {
+                commentsList.innerHTML += `<p><strong>${comment.author_name}:</strong> ${comment.comment_text}</p>`;
+            });
+        }
+
+        // Save a new comment to localStorage specific to this blog post
+        function saveComment(comment) {
+            const comments = JSON.parse(localStorage.getItem(blogPostId)) || [];
+            comments.push(comment);
+            localStorage.setItem(blogPostId, JSON.stringify(comments));
+        }
+
+        // Handle the comment form submission
+        document.getElementById('comment-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const authorName = document.getElementById('author-name').value;
+            const commentText = document.getElementById('comment-text').value;
+
+            const newComment = {
+                author_name: authorName,
+                comment_text: commentText
+            };
+
+            saveComment(newComment); // Save the comment to localStorage
+            loadComments(); // Refresh the list of comments
+
+            // Clear the input fields after submitting
+            document.getElementById('author-name').value = '';
+            document.getElementById('comment-text').value = '';
+        });
+
+        // Initial loading of comments when the page loads
+        loadComments();
+    </script>
 
             <div class="citations">
                 <h3>References</h3>
